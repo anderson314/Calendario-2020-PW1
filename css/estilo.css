@@ -1,0 +1,180 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background:#476B86;
+}
+.cabecalho{
+	width: 100%;
+	padding-top: 5px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	background:#133652;
+}
+.logo{
+	width: 350px;
+}
+.logo a img{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.logo a img:hover{
+	overflow: hidden;
+	max-width: 60%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.mes{
+	width: 415px;
+	margin-top:6px;
+	margin-left: 50%;
+	font-size: 30px;
+	padding-top: 12px;
+	line-height: 35px;
+	color:white;
+}
+.mes a{
+	font-size: 30px;
+	text-decoration: none;
+	color: white;
+}
+
+.mes a:hover{
+	color: #000000;
+	transition: ease-in 0.4s;
+}
+#caixa{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	padding: 0;
+
+	background:#476B86;
+}
+.meses{
+	width: 220px;
+	line-height: 1.8;
+}
+.meses ul li{
+	list-style-type: none;
+	text-align: justify;
+}
+.meses ul li a{
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+.meses ul li a:hover{
+	color: #2f2f2f;
+}
+.calendario{
+	float: right;
+	width: 1000px;
+	background:#dbdbdb;
+}
+.tabela{
+	width:100%; /*largura*/
+	height:20px; /*altura*/
+	text-align:center; /*alinhamento dos itens da tebela*/
+}
+.tabela td{
+	text-align:center; /*alinhamento dos itens da tebela*/
+	width:536px; /*largura*/
+	height:50px; /*altura*/
+}
+.tabela td:hover{
+	background:#fff;
+	text-shadow:2px 2px 100px #fff; /*efeitos para diferenciar o "hover" do cabeçalho e do restante do calendário*/
+}
+/*A classe "tabela" é referente ao cabeçalho principal do calendário*/
+
+table{
+	width:1000px; /*largura*/
+	height:500px; /*altura*/
+	text-align:center; /*alinhamento dos itens da tebela*/
+}
+table th{
+	font-size:25px; /*tamanho da fonte*/
+	width:168px; /*largura da coluna com os dias da semana*/
+}
+table td{
+	font-size:22px; /*tamanho da fonte*/
+}
+table td:hover{
+	background:#AAAAAA; /*mudar cor de fundo */
+	color:#000; /*cor do texto*/
+	text-shadow:2px 2px 100px #000; /*1° direita; 2º esquerda; 3° intensidade; 4º cor (sombrear o texto)*/
+	transition: all 0.2s ease-in;
+}
+/*A tag Table é referente ao calendário em si*/
+
+.zoom{
+	overflow: hidden;
+	max-width: 80%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.zoom:hover{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.feriado{
+	color: rgb(20, 136, 212);
+}
+.feriado:hover{
+
+	background:  rgb(20, 136, 212);
+	color: #000;
+}
+.feriado a{
+	color: rgb(20, 136, 212);
+	text-decoration: none;
+	display: block;
+}
+
+.feriado a:hover{
+	background:  rgb(20, 136, 212);
+	color: #000;
+
+}
+
+.dia{
+	color:rgb(175, 175, 175);
+}
+/*cor que representa os dias que não fazem parte do mês*/
+
+.dom{
+	color:rgb(102, 101, 101);
+}
+/*cor que representa os domingos*/
+
+a{
+	font-size: 20px;
+	text-decoration: none;
+}
+/*formatação dos sinais de maior e menor que são usados para "nevegar" de mês em mês*/
+#descricao{
+	width: 100%;
+	margin-bottom: -20px;
+	color: #7E7E7E;
+	background: #000;
+	text-align: justify;
+}
+.rodape{
+	color: #7E7E7E;
+	background: #000;
+	text-align: right;
+	
+	margin-bottom: -20px;
+	float: center;
+	text-align:center ;
+}

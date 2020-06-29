@@ -1,0 +1,82 @@
+*{
+	padding:0;
+	margin:0 auto;
+}
+
+/* Página inicial */
+
+#wrapper{         /* Id de toda a página */    
+	width:1364px;   /*Largura da página inteira */
+	height:630px;	/*Altura da página inteira */
+	border:1px solid #000;
+	background:#476B86;  /*Cor da página*/
+}
+
+h1{    /*Texto "Calendário 2020"*/
+	
+	color:#fff;
+	font-family: arial;  /*familia da fonte: arial*/
+	font-size: 50px;    /*tamanho da fonte*/
+}
+
+#meses{ /*Foi juntado todos os meses em uma unica div para que pudesse centralizá-los sem que eles ficassem muito afastados. Como foi visto na primeira versão, estava tudo separado, e agora estão mais juntos e centralizados na página.*/
+	
+	margin:83px 33px 10px 0px;
+	
+}
+
+.mes{
+	width:200px;
+	height:180px;
+	border:1px solid #000;
+	background:#D8DBE2;
+	margin:10px 10px 0px 0px; /*margem dos meses: cima, direita, baixo e esquerda */
+	float: right;
+	
+	
+	text-decoration:none; /*Tirar sublinhado do link*/
+	color:#000;			  /*Tirar a cor azul que a tag <a> deixou no link, deixando preto*/
+	
+	/*Fazer efeito de ZOOM */
+	
+	overflow:hidden;
+	max-width: 100%;  /*Ajustar a 100% o tamanho das div's dos meses.*/
+	
+	transition:all 0.3s;
+}
+
+p{ /*Fonte e tamanho dos nomes dos meses. Janeiro, feveireiro, março etc.*/
+	text-align: center;  /*Alinhar texto: centro*/
+	font-family:arial;
+	font-size:30px;
+	margin-top:65px;     /*Afastar o texto a uma distância de 65px do topo, deixando-os centralizados */
+}
+
+
+
+.mes:hover{
+	/*Efeito de zoom*/
+	-moz-transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	transform:(1.1);
+	background:rgb(153, 156, 158);
+}
+header{   /*Cabeçalho da página em que está a tag <h1>Calendário 2020</h1>*/
+	height:60px;
+	background:#133652;
+	padding:10px;
+	text-align: center;  /*Alinha o texto ao centro*/
+}
+
+.mes a{
+	display:block;
+	height:180px;
+}
+
+
+
+
+ 
+ 
+
+
